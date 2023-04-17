@@ -1,0 +1,25 @@
+pointsRenderPosition - rectangleVehiclesPositions
+// вершины для отрисовки прямоугольника
+scale - drawingScale
+// увеличение визуализации по сравнению с реальными данными
+response - authenticationResponse
+// результат запроса на авторизацию
+id - requestedOwnerId
+// id пользователя, который отправил запрос на изменения данных
+addingCount - differenceServiceTypesByUpdated
+// на view часть приложения приходили данные,
+// если данные отличались от тех, что сейчас отображаются, то
+// необходимо обновить ui
+source - baseItem
+// элемент, на основе которого создаются такие же элементы
+// для того, чтобы предметы созданные из одних и тех же данных
+// считались одинаковыми
+price, afterBuyingPrice - buyingPrice, cellingPrice
+// цены покупки и продажи различалась, 
+oldCount - itemCountOnInventory
+// количество предметов в инвенторе, использовалось при добавлении
+isBottomless - limitlessResources
+// безграничные ресурсы в инвентаре (для npc с с бесконечными деньгами)
+inventory - invertableItemsCollection
+// деньги и предметы хранились в разных местах, соответственно логика
+// была разнесена, по контексту не понятно отличие Wallet от Inventory

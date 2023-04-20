@@ -1,0 +1,36 @@
+6.1
+stat - reachedStat 
+// достигнутое значение определенного стата
+parallelRoutine - showingRoutine 
+// параллельность корутины понятна из типа, контекст в том, что корутина
+// условно параллельная
+container - actualContextContainer
+// используемый в методе контейнер должен быть выбран
+// взависимости от текущего контекста
+actual - actualValueStat
+filter - actualContext
+
+6.2
+openContentMessageDatas - messageQueue 
+// очередь сообщений для показа уведомлений об открытии контента
+gameQueueProcessor
+configsCache
+// очередь игровых процессов
+componentsCollection
+// паттерн Component
+createStructureCommand
+
+6.3
+result - selectedContainers
+containers
+// в контексте класса статистики
+abilityToStatType
+// мапа, которая используется всем классом, поэтому дано подробное название
+
+6.4
+command - moveStructureCommand
+isFit - contextIsFit
+widget - cachedWidget
+index - indexOfPreviewDatas
+point - progressPointInstance
+ 

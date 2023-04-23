@@ -1,0 +1,27 @@
+7.1
+inProcess - isProcesssing
+currentProcessRun - isCurrentProcessRun
+playerHasControl
+isStarted
+isFromSaveFile
+
+7.2
+tutorialComplete
+loadSuccess
+// при загрузке сейва
+
+7.3
+// использую в основном цикл foreach, в котором и даю осмысленные имена
+i - orderIndexOnOptionList
+
+7.4
+
+contentLock, contentUnlock
+routineStarted, routineStopped
+hasAny, empty
+
+7.5
+
+optionList - displayedOptionList
+element - menuElement
+actual - actualStatisticsValue

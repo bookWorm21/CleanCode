@@ -1,0 +1,27 @@
+changingToAnotherTimeDuration - changingDayTimeDurationSeconds
+// время анимации смены времени дня в секундах
+statContainer - statsGroupedByContext
+// последовательность статов по определенному контексту (например уровень)
+pair - contextFilter
+// в цикле foreach при переборе фильтров
+radius - radiusOnUnits
+// расстояние измеряемой в игровых юнитах
+turnsPerSpawn - playerTurnsPerSpawn
+// игровой объект работает раз в несколько ходов игрока
+statType - cellStatModificationType
+// в определенных клетках уровня изменяется логика добавления очков/кристаллов
+// название использовалось неточное, подобное название позже использовалось
+cellStats - cellStatsModification
+// контекст тот же, что и в прошлой исправлении
+value - turnChanging
+moving - movingProcessing
+cargoLoaded - cargoLoadedCount
+easing - animationCurveFunction
+// в проекте существует класс для использования разных не линейных функций
+// для плавных анимаций, при использовании лениво называется easing
+maxStats - statsWhichUsingMaxFunction
+// для вычисления общего значения для набор статов может использоваться
+// разная функция, для подсчета общего количества - sum, лучего -max
+// так как статы хранятся в энаме, то единственный способ на прямую
+// привязать функцию - это аттрибуты, которые не очень хочется
+// использовать в рантайме

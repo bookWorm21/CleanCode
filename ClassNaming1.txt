@@ -1,0 +1,25 @@
+1.
+GameQueueProcessor - GameProcessesQueue
+// очередь игровых процессов
+PreviewRenderManager - PreviewRendering
+BannerManager - BannerFactory
+AddingMinedResourceToPurse - ResourceBuildingObserver
+// промежуточное звено между добываемывами ресурсами и инвентарем
+ResourceNavigation - ResourceContainersLocator
+// служит для хранения информации о точках хранения определенного
+// ресурса
+2. 
+// Всегда при запросе информации у объекта используется
+Get + WhatYouNeed, GetCurrentProcess, GetCards
+
+// Для глобальных сервисов используется префикс Manager
+AssetManager, CameraManager, LocalizationManager
+
+// Если нужной информации у объекта может не быть,
+// используется конструкции TryGet, возвращает bool
+// и нужный объект в out
+TryStartNext, TryGetCurrent
+
+// Для добавления какого-то компонента или гарантированное создание
+// объекта, если такого еще нет, используется префикс Ensure
+EnsureWindow, EnsureCargos, EnsureComponent

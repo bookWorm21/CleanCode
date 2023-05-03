@@ -1,0 +1,19 @@
+GetCardAbilities - TakeCardAbilities + GenerateCardAbilities
+// при генерации карт мы запрещаем отменять ход, поэтому
+// в методе были побочные действия, котоыре имя никак не показывало
+// поэтому разбил на 2 метода
+ChangeCategory - ChangeCategoryByNumber
+SwitchPanel - SwitchPanelByNumber
+// уточнение, что передаваемый параметр - индекс
+Perform - IsPerformConditions
+// метод возвращается флаг о выполнении условий
+// окончания уровня
+Interactive - SetInteractive
+// установка интерактивности кнопки на панеле
+MoveFromMaze - MoveToPoint
+OnTrap - OnEnteredTrap
+HandleLog - RecordLog
+GetInteraction - GetInteractionMatrixCell
+ReturnToDefault - Reset
+SpeedUpBuild - SpeedUpBuildingProgress
+SelectRecipe - StartProductByRecipe

@@ -1,0 +1,12 @@
+3.1
+Ability.FromTarget(AbilityTarget target)
+// создание объекта абилити взависимости от
+// цели (возможно что абилка не может быть создана) для такой цели
+StructureComponent.CreatyBy(other, isDeep:bool)
+StatContainer.FromContext(GameContext context)
+3.2
+// у абстрактных классов нет информации в имени
+abstract class GameCommand <- ChangeScoreCommand
+abstract class Ability <- BuildAbility, SwapAbility
+IWindowRetractablePart - RetractablePartOfWindow
+IWindowProcessor - WindowProcessor

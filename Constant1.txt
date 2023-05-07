@@ -1,0 +1,19 @@
+SCENE_NAME параметр запускаемой сцены (частя уровня)
+GAME_GRID_MASK 	ENVIRONMENT_MASK STRUCTURE_AND_GRID_MASK
+// рейкаст маски в отдельные константы
+UI_LAYER BUILDING_PREVIEW_LAYER
+// рейкаст слои в отдельные константы
+WINDOW_PREFAB_PATH
+// путь загружаемого префаба
+MAIN_CAMERA DESTROYED PLAYER
+// тэги
+LOG_FORMAT POINTS_FORMAT
+// форматирование для некоторых строк
+ABILITY_TO_STATTYPE
+// маппин типа класса к енуму
+// по смыслу константу, просто вычисляется во время создания объекта
+// в плюсах можно было бы использовать constexpr
+BUILD_UTILS_MENU_PATH
+// меню хелперы для контекстного меню
+MOVE_ANIMATION_TIME
+AVERAGE_FRAME_TIME

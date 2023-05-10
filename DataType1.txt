@@ -1,0 +1,25 @@
+Position: float x, float y - Position: int x, int y
+// Заменил тип координаты, чтобы измерять в количестве юнитах
+operator gridPosition => cell - extension method ToCell(gridPosition)
+// заменил переопределение оператора приведения типа на метод расширения
+countCoinsForUnlock
+// добавил проверку на ноль, так как в конфигах такое значение возможно
+EPS
+// введение константы для вычисления дробный значений
+float probability - double probability
+// изменил тип для вероятности 
+elapsedTime < TransitionTime - processed
+// условие проверки в while
+type == House && !components.Contains<HouseComponent> - necessaryAddHouseComponent
+reference == null || reference.KeyValid - validReference
+// в скрипте для валидации даты
+many group names hard coding - static class Group with const naming
+"Biome" - Group.Biome, Biome = "Biome"
+many menu paths - to constansts MenuPath
+// вынес хардовые вызовы пути меню, но гораздо удобнее как путь
+// прописан прям над методом аттрибутом
+secondPerMinute
+minutePerHour
+hourPerDay
+dayHour on setting config - [Range(0, hourPerDay - 1)]dayHour
+// вынес временные константы

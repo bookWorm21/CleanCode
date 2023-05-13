@@ -1,0 +1,32 @@
+if(RecordingState != null)
+// в записи истории игры, которая разбита на ходы (каждый ход несколько действий)
+// при попытке записи нового хода при условии не законченности предыдушего
+// вывожу error
+if(RecordingState == null)
+// аналогичный контекст, при попытке записи действия, если не началась запись хода
+if(!CanUndo())
+// проверке при попытке отмены хода, при отсутствие такой возможности
+if(!GameSession.IsStarted)
+// при попытке сохранить не запущенную сессию
+if (GameSession is not { IsStarted: true })
+// при попытке осуществить выход из сессии, которая не запущена
+if(IsLoading && GameSession != null)
+// проверка при попытке начать новую гейм сессию
+// какая-та начата или еще грузиться
+if (Configs.ContainsKey(config.name))
+// конфиги хранятся по имени, если конфиг с таким именем уже добавлен
+// то он не добавится и бросится ошибка
+if (!Data.IsLoaded)
+// бросается ошибка при попытке обратиться к игровым данным,
+// когда они еще не загружены
+if(!Data.TryGet(name, out config) || confit not is TConfig)
+// отсутсвие в данных конфига нужного имени или нужного типа 
+readonly GridStatModifier
+readonly radius
+readonly ModificationStatType
+readonly addingValue
+readonly multiplierValue
+// статические модификаторы на карте
+readonly GridPosition
+readonly TCommandData
+// данные команд, так как инициализируются только в конструкторе

@@ -1,0 +1,31 @@
+метод CalculateAcceleration разбил на логические части
+IsSlimeInteractable ReactionZone GetAcceleration MoveProcess RotateProcess
+
+в методе OnGUI выделил и вынес в методы
+DrawWallTileField DrawSelectLevelField DrawGridField
+
+в методе CreateLevel вынес в методы вычисления соседей
+GetDiagonalNeighboards GetVerticalNeighboards GetHorizontalNeighboards GetNeighboards
+
+в методе DrawInteractionMatrix собрал в функторы рисовальщики строк и столбцов
+elementType => ElementHandler, RowHandler ColumnHandler TableHeadHandler BrimHandler
+
+в FarmGrid.Init выделил следующее
+MapInitialize PlaceGridParts 
+FirstTimeInitialization (старый костыль, обособил в метод и оставил описание)
+
+также в FarmGrid описал метод для переводы координат в единицы в юнитах и обратно
+
+в FilterSwitcher 
+выделил сущность ViewFilterMode, передав туда все зависимости, добавил методы Enable-Disable
+
+в PlaceLogic заменил проверку флагов на выделение сущностей
+поиск нужно места происходит по маске, которая заранее устанавливается
+и считывается в отдельном методе GetSiteForPlace
+также выделил CanPlace PlacingTargetBuilding
+логику связанной с размещением конкретного здания вынес в компонент здания BuildingPlaceComponent
+в которой помимо вспомогательных методов есть OnPlace
+
+в сущности FocusableObjectHandler была проверка на движение камеры, так как не нужно было обрабатывать
+клик, если это движение камеры. заменил обрабатываю ввод в отдельном компоненте InputProcessor,
+который решает 'кому отдать ввод'

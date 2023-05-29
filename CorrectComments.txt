@@ -1,0 +1,28 @@
+- усиление
+// префабы должны лежать в определенной папке
+structureSetPath = Path.Combine(path, StructurePrefabsFolderName);
+// имя конфига должно совпадать с именем файла
+structureSetName = Path.GetFileName(path)
+- Информативные комментарии
+// Имя префаба конкретного уровня должно удовлетворять паттерну Structure_Level (Structure_1, Structure_2)
+prefabNameMatch = Regex.Match(prefabPath, "Structure_(\\d+)\\.prefab");
+// Возвращает группы скинов, которые находятся в подпапках переданного конфига
+GetStructureSkinGroups
+// Используется только сериализатором
+map<filterType, string> filters
+{
+	get => Filters.ToMap(pair => pair.Key, pair => pair.Value.name);
+	set => Filters = value.ToMap(pair => pair.Key, pair => GameData.GetConfig(pair.value);
+}
+- Предупреждение
+// При передаче force в true, вероятны не плавные смены интерфейса, но
+// необходимо для отсутствия подзависаний переходов при частых запросах
+ChangeWindow(Window, bool force);
+- Комментарии TODO
+// Need general mechanism for show ui on same place
+- В предыдущих версиях у способностей была цена
+- Чтобы оставить возможность вернуться к предыдущему состоянию
+- абилка бесплатная системно
+// System rework, abilities is free
+// Weak point in performance but okey with the current restrictions
+// Menu Window not ready on this platform so start game scene

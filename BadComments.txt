@@ -1,0 +1,23 @@
+4.
+// Expensive, current number of elements is small
+// Load bootstrap scene
+// Wait initialization systems
+// Collect recursive method result on Path result
+// Lazy initialization
+// Force system initialization on start
+5.
+- Позиционные маркеры в системе, которая была реализована новым способым, но старое Api
+- еще использовалось: в EventManager и InputManager
+11.
+- Код для релизной функциональности был закомментирован для выпуска демо:
+// ShowSavedSessionsWindow
+// ShopPanel.Init()
+// ShopButton.Interactable = CanBuyItems()
+// SteamManager.RaiseEvent()
+// ShowAchieveMessage
+// abilityPool.Add(UpgradeCommand) 
+12.
+- комментарий для описания параметров событий, заменил на отдельные структуры, в котором описаны нужны поля
+// int: score, int:change, structure:source ScoreChangedAction
+// Unit: movedUnid, Vector3: target UnitMovedAction
+// Ability: ability, Vector3: target, Result: successResult AbilityEndedAction
